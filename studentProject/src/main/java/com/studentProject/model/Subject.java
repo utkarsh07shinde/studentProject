@@ -23,6 +23,7 @@ public class Subject {
     private String name;
     
     @ManyToMany(mappedBy = "subjects")
+    @JsonIgnore
     private Set<Student> students;
     
     // Getters and Setters
